@@ -1,5 +1,7 @@
 
-import lib.mission_test 
+# import mission_test from lib directory
+
+from lib import mission_test
 import lib.ros as ros_man
 import lib.settings as set_man
 from lib.mission_test import MavrosMissionTest
@@ -11,7 +13,7 @@ import sys
 
 
 # module config
-_NODE_NAME = "mavros_mission_test"
+_NODE_NAME = "mavros_mission_0202.test"
 _PKG = 'px4'
 
 # module state

@@ -231,6 +231,7 @@ class MavrosMissionTest(MavrosTestCommon):
     # Test method
     #
     def test_mission(self):
+        print("asdasdasdasdasasdas")
         """Test mission"""
         if len(sys.argv) < 2:
             self.fail("usage: mission_test.py mission_file")
@@ -313,7 +314,7 @@ class MavrosMissionTest(MavrosTestCommon):
 if __name__ == '__main__':
     import rostest
     rospy.init_node('test_node', anonymous=True)
-
+    print("MAVROS dddddddddddddddddddddddddddddddddddddddd")
     name = "mavros_mission_test"
     if len(sys.argv) > 1:
         name += "-%s" % sys.argv[1]

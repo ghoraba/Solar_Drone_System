@@ -7,17 +7,17 @@ import os
 sys.path.append(os.getcwd())
 
 # change this
-import main as camera_adapter_node
+import main as Drone_node
 # autopep8: on
 
 
 # change this
-_NODE_DELAY = 0.05  # 50ms delay / operation frequency 20Hz
+_NODE_DELAY = 0.01  # 50ms delay / operation frequency 20Hz
 
 
 if __name__ == '__main__':
     # change this
-    camera_adapter_node.ros_node_setup()
+    Drone_node.ros_node_setup()
 
     while True:
         if rospy.is_shutdown():
@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
         try:
             # change this
-            camera_adapter_node.ros_node_loop()
+            Drone_node.ros_node_loop()
 
         except rospy.ROSInterruptException:
             break
